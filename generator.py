@@ -35,9 +35,9 @@ def convert_to_sql(line):
 # Convert a value to fit in a INSERT statement.
 def convert_value(s):
     if len(s) == 0:
-        return 'null'
+        return "''"
     elif s == 'NULL':
-        return 'null'
+        return 'NULL'
     else:
         return "'%s'" % s
 
